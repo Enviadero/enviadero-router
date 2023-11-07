@@ -32,7 +32,7 @@ def router():
                     business_code = item["business_code"]
                     break
 
-    if business_code == "enviadero":
+    if business_code == "doto":
         requests.post("https://hook.us1.make.com/c388wduk5ntwmr5cpbf0u9k87ssrjhpx", json=data)
         print("Data success sent for Doto")
         return "Data success sent for Doto"
