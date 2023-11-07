@@ -28,7 +28,7 @@ def router():
                 if beetrack_dispatch_response["response"]["identifier"] == data["identifier"]:
                     business_code = item["business_code"]
                     break
-                elif 'name' in data['group'] and data['group']['name'] == item["business_code"]:
+                elif 'name' in data['group'] and data['group']['name'] == item["business_code"].upper():
                     business_code = item["business_code"]
                     break
 
