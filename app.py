@@ -34,7 +34,14 @@ def router():
         print("Data success sent for Doto")
         return "Data success sent for Doto"
     elif business_code == "xiaomi":
+        print("Data success sent for Xiaomi")
         return "Data success sent for Xiaomi"
+    elif business_code == "movingbox":
+        print("Data success sent for Movingbox")
+        return "Data success sent for Movingbox"
+    elif business_code == "test-12342":
+        print("Data success sent for Test")
+        return "Data success sent for Test"
     else:
         print("Business not found")
         return "Business not found"
