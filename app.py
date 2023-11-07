@@ -12,6 +12,7 @@ def main():
 @app.route('/webhook', methods=['POST'])
 def router():
     data = request.json
+    print(data)
 
     business = requests.get("https://tim-loonie-94123.herokuapp.com/business")
 
