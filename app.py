@@ -28,6 +28,9 @@ def router():
                 if beetrack_dispatch_response["response"]["identifier"] == data["identifier"]:
                     business_code = item["business_code"]
                     break
+                elif 'name' in data['group'] and data['group']['name'] == item["business_code"]:
+                    business_code = item["business_code"]
+                    break
 
     if business_code == "enviadero":
         requests.post("https://hook.us1.make.com/c388wduk5ntwmr5cpbf0u9k87ssrjhpx", json=data)
