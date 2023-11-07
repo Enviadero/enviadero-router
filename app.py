@@ -25,7 +25,7 @@ def router():
         for label in labels[item["business_code"]].json():
             beetrack_dispatch_response = label.get("beetrack_dispatch_response")
             if beetrack_dispatch_response and "identifier" in beetrack_dispatch_response.get("response", {}):
-                if beetrack_dispatch_response["response"]["identifier"] == data["identifier"] or ('name' in data['groups'][0] and data['groups'][0]['name'] == item["name"]):
+                if beetrack_dispatch_response["response"]["identifier"] == data["identifier"] or ('groups' in data and data['groups'] and 'name' in data['groups'][0] and data['groups'][0]['name'] == item["name"]):
                     business_code = item["business_code"]
                     break
 
