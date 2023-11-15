@@ -37,12 +37,30 @@ def router():
     elif business_code == "xiaomi":
         print("Data success sent for Xiaomi")
         return "Data success sent for Xiaomi"
-    elif business_code == "movingbox":
-        print("Data success sent for Movingbox")
-        return "Data success sent for Movingbox"
-    elif business_code == "test-12342":
-        print("Data success sent for Test")
-        return "Data success sent for Test"
+    elif business_code == "dichipet":
+        print("Data success sent for Dichipet")
+        return "Data success sent for Dichipet"
+    elif business_code == "mainbit":
+        print("Data success sent for Mainbit")
+        return "Data success sent for Mainbit"
+    elif business_code == "serge":
+        print("Data success sent for Serge")
+        return "Data success sent for Serge"
+    elif business_code == "sago":
+        print("Data success sent for Sago")
+        return "Data success sent for Sago"
+    elif business_code == "totto":
+        print("Data success sent for Totto")
+        return "Data success sent for Totto"
+    elif business_code == "kubo financiero":
+        print("Data success sent for Kubo financiero")
+        return "Data success sent for Kubo financiero"
+    elif business_code == "helgen":
+        print("Data success sent for Helgen")
+        return "Data success sent for Helgen"
+    elif business_code == "data components":
+        print("Data success sent for Data components")
+        return "Data success sent for Data components"
     else:
         print("Business not found")
         return "Business not found"
