@@ -46,6 +46,7 @@ def router():
         print("Data success sent for Doto")
         return "Data success sent for Doto"
     elif business_code == "xiaomi":
+        request.post("https://mistoremx.com/etiqueta.php", json=data)
         print("Data success sent for Xiaomi")
         return "Data success sent for Xiaomi"
     elif business_code == "dichipet":
